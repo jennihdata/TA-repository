@@ -27,4 +27,5 @@ class Minion():
     def blitme(self):
         self.screen.blit(self.image, self.rect)
 
-
+    def center_minion(self):
+        self.center = self.screen_rect.centerx
