@@ -12,10 +12,12 @@ from evilminion import Evilminion
 import game_functions as gf
 
 def run_game():
+
     pygame.init()
     ai_settings = Settings()
     screen = pygame.display.set_mode((ai_settings.screen_width, ai_settings.screen_height))
     pygame.display.set_caption("Minion Invasion")
+
     play_button = Button(ai_settings, screen, "Play")
     stats = Gamestats(ai_settings)
     sb = Scoreboard(ai_settings, screen , stats)
@@ -25,7 +27,8 @@ def run_game():
     evilminions = Group()
     gf.create_fleet(ai_settings, screen, minion, evilminions)
     bg_color = (148, 227, 246)
-
+    pygame.mixer.music.load("images/minionsmarch.mp3")
+    pygame.mixer.music.play(-1,0.0)
 
     while True:
         gf.check_events(ai_settings,screen,stats, sb, play_button, minion, evilminions, bullets)
@@ -38,9 +41,6 @@ def run_game():
             if event.type == pygame.QUIT:
                 sys.exit()
 
-        # screen.fill(ai_settings.bg_color)
-        # minion.blitme()
-        # pygame.display.flip()
         gf.update_screen(ai_settings, screen, stats, sb, minion, evilminions, bullets, play_button)
 
 

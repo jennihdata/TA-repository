@@ -10,6 +10,10 @@ def check_keydown_events(event, ai_settings,screen, minion, bullets):
         minion.moving_right = True
     elif event.key == pygame.K_LEFT:
         minion.moving_left = True
+    elif event.key == pygame.K_DOWN:
+        minion.moving_down = True
+    elif event.key == pygame.K_UP:
+        minion.moving_up = True
     elif event.key == pygame.K_SPACE:
         fire_bullet(ai_settings, screen, minion, bullets)
     elif event.key == pygame.K_q:
@@ -25,6 +29,11 @@ def check_keyup_events(event, minion):
         minion.moving_right = False
     elif event.key == pygame.K_LEFT:
         minion.moving_left = False
+    elif event.key == pygame.K_DOWN:
+        minion.moving_down = False
+    elif event.key == pygame.K_UP:
+        minion.moving_up = False
+
 
 def check_events(ai_settings, screen, stats, sb, play_button, minion, evilminions, bullets):
     for event in pygame.event.get():
