@@ -11,7 +11,7 @@ with open (filename) as f:
     header_row = next(reader)
 
 
-    dates, steps, intervals = [], [],[]
+    dates, steps= [], []
     steps_total = 0
     current_date = 0
     for row in reader:
@@ -29,8 +29,6 @@ with open (filename) as f:
                 steps_total += step
 
     steps.append(steps_total)
-    interval = int(row[2])
-    intervals.append(interval)
 
 del steps[0]
 # print(steps)
