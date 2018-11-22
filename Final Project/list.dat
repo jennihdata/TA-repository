@@ -1,0 +1,28 @@
+q 1 0 sounds/piano-med-c3.wav 113
+Q 1 1 sounds/piano-med-db3.wav 113
+w 2 0 sounds/piano-med-d3.wav 119
+W 2 1 sounds/piano-med-eb3.wav 119
+e 3 0 sounds/piano-med-e3.wav 101
+r 4 0 sounds/piano-med-f3.wav 114
+R 4 1 sounds/piano-med-gb3.wav 114
+t 5 0 sounds/piano-med-g3.wav 116
+T 5 1 sounds/piano-med-ab3.wav 116
+y 6 0 sounds/piano-med-a3.wav 121
+Y 6 1 sounds/piano-med-bb3.wav 121
+u 7 0 sounds/piano-med-b3.wav 117
+i 8 0 sounds/piano-med-c4.wav 105
+I 8 1 sounds/piano-med-db4.wav 105
+o 9 0 sounds/piano-med-d4.wav 111
+O 9 1 sounds/piano-med-eb4.wav 111
+p 10 0 sounds/piano-med-e4.wav 112
+a 11 0 sounds/piano-med-f4.wav 97
+A 11 1 sounds/piano-med-gb4.wav 97
+s 12 0 sounds/piano-med-g4.wav 115
+S 12 1 sounds/piano-med-ab4.wav 115
+d 13 0 sounds/piano-med-a4.wav 100
+D 13 1 sounds/piano-med-bb4.wav 100
+f 14 0 sounds/piano-med-b4.wav 102
+g 15 0 sounds/piano-med-c5.wav 103
+
+
+
